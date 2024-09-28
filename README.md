@@ -21,7 +21,7 @@ Here’s the truth table for a 1-bit full adder:
 
 ![tt](https://github.com/user-attachments/assets/0b3ab24f-1d7e-4a01-80ce-5e7406f4082b)
 
-Fig 1 : Diagram and truth table of full adder
+## Fig 1 : Diagram and truth table of full adder
 
 ### Logic Expressions:
 
@@ -37,9 +37,10 @@ COUT=(A&B) | (CIN&(A^B))
 
 ![image](https://github.com/user-attachments/assets/7d6fa554-2614-4f19-aa68-65c9e6153caa)
 
-Fig:2 Diagram of 4 Bit Adder
+## Fig:2 Diagram of 4 Bit Adder
 
 ## Creating Source Codes 
+
 	In the Terminal, type gedit <filename>.v (ex: gedit 4bitadder.v). 
 
 	A Blank Document opens up into which the following source code can be typed down. 
@@ -68,7 +69,7 @@ Note : File name should be with HDL Extension
       
 	After this you can see the window like below 
 
-Fig :3 Invoke the Cadence Environment
+## Fig :3 Invoke the Cadence Environment
 
 	To Launch Simulation tool 
 
@@ -84,7 +85,7 @@ or
 
 	Click the cds.lib file and save the file by clicking on Save option 
 
-Fig 4:cds.lib file Creation
+## Fig 4:cds.lib file Creation
 
 	Save cds.lib file and select the correct option for cds.lib file format based on the HDL Language and Libraries used. 
 
@@ -96,7 +97,7 @@ Fig 4:cds.lib file Creation
 
 ![image](https://github.com/user-attachments/assets/781b297a-11e9-4140-89c5-ee3b0d15bbd4)
 
-Fig 5: Selection of Don’t include any libraries
+## Fig 5: Selection of Don’t include any libraries
 
 	A ‘NCLaunch window’ appears as shown in figure below 
 
@@ -106,7 +107,7 @@ Fig 5: Selection of Don’t include any libraries
 
 	To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation. 
 
-Fig 6: Nclaunch Window
+## Fig 6: Nclaunch Window
 
 ## Step 1: Compilation:– Process to check the correct Verilog language syntax and usage 
 
@@ -125,7 +126,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation
 
-Fig 7: Compiled database in worklib
+## Fig 7: Compiled database in worklib
 
 	After compilation it will come under worklib you can see in right side window
 
@@ -148,7 +149,7 @@ Fig 7: Compiled database in worklib
    
 	After elaboration the file will come under snapshot. Select the test bench and elaborate it.
 
-Fig 8: Elaboration Launch Option
+## Fig 8: Elaboration Launch Option
 
 ## Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
 
@@ -160,11 +161,11 @@ Fig 8: Elaboration Launch Option
 
 	Steps for simulation – Run the simulation command with simulator options
 
-Fig 9: Design Browser window for simulation
+## Fig 9: Design Browser window for simulation
 
-Fig 10: Launching Simulation Waveform WindowSimulation Waveform Window
+## Fig 10: Launching Simulation Waveform WindowSimulation Waveform Window
 
-Fig 11: Simulation Waveform Window
+## Fig 11: Simulation Waveform Window
 
 
 
