@@ -1,12 +1,15 @@
-# Full_Adder_nclaunch-sim
+# 4Bit Adder
 
 ## Aim:
 To write a verilog code for 4bit adder and verify the functionality using Test bench.
 
-# Tool Required: 
+ Write Verilog Code
+ Verify the Functionality using Test-bench.
+
+## Tool Required: 
 Functional Simulation: nclaunch Simulator (nclaunch) 
 
-# 4-bit Adder Design:
+## 4-bit Adder Design:
 To construct a 4-bit adder, need to chain together four 1-bit full adders. Each full adder computes the sum and carry for one bit of the two numbers. The carry-out from one adder feeds into the carry-in of the next adder in the sequence. This process adds the two 4-bit numbers bit by bit, with the carry propagating through each stage, resulting in a final sum and carry-out at the end.
 To design a 1-bit full adder, the first step is to create a truth table that represents all possible combinations of the inputs (A, B, and CIN) and the corresponding outputs (Sum(S) and COUT).
 
@@ -18,7 +21,7 @@ Here’s the truth table for a 1-bit full adder:
 
 Fig 1 : Diagram and truth table of full adder
 
-# Logic Expressions:
+### Logic Expressions:
 1.	Sum (S):
 S=A⊕B⊕CIN
 Where ⊕ represents XOR.
@@ -29,7 +32,7 @@ COUT=(A&B) | (CIN&(A^B))
 
 Fig:2 Diagram of 4 Bit Adder
 
-# Creating Source Codes 
+## Creating Source Codes 
 	In the Terminal, type gedit <filename>.v (ex: gedit 4bitadder.v). 
 	A Blank Document opens up into which the following source code can be typed down. 
 Note : File name should be with HDL Extension
@@ -43,7 +46,7 @@ a) Verify the Functionality
 
 •	fa_4bit_test.v → Test bench 
 
-# Functional Simulation: 
+## Functional Simulation: 
 	Invoke the cadence environment by type the below commands 
 	tcsh (Invokes C-Shell) 
 	source /cadence/install/cshrc (mention the path of the tools) 
@@ -78,7 +81,7 @@ Fig 6: Selection of Don’t include any libraries
 	Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation .
 	To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation. 
 
-# Step 1: Compilation:– Process to check the correct Verilog language syntax and usage 
+## Step 1: Compilation:– Process to check the correct Verilog language syntax and usage 
 	Inputs: Supplied are Verilog design and test bench codes 
 	Outputs: Compiled database created in mapped library if successful, generates report else error reported in log file 
 	Steps for compilation: 
@@ -96,7 +99,7 @@ Fig 7: Compiled database in worklib
 
 	The cds.lib file is an ASCII text file. It defines which libraries are accessible and where they are located. It contains statements that map logical library names to their physical directory paths. For this Design, you will define a library called “worklib”
 
-# Step 2: Elaboration:– To check the port connections in hierarchical design 
+## Step 2: Elaboration:– To check the port connections in hierarchical design 
 	Inputs: Top level design / test bench Verilog codes 
 	Outputs: Elaborate database updated in mapped library if successful, generates report else error reported in log file 
 	Steps for elaboration – Run the elaboration command with elaborate options 
@@ -109,7 +112,7 @@ Fig 7: Compiled database in worklib
 
 Fig 8: Elaboration Launch Option
 
-# Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
+## Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
 	Inputs: Compiled and Elaborated top level module name 
 	Outputs: Simulation log file, waveforms for debugging 
 	Simulation allow to dump design and test bench signals into a waveform 
