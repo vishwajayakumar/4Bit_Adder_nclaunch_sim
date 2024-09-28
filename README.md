@@ -64,7 +64,7 @@ or
 	Select Multiple Step and then select “Create cds.lib File” as shown in below figure 
 	Click the cds.lib file and save the file by clicking on Save option 
 
-Fig 5:cds.lib file Creation
+Fig 4:cds.lib file Creation
 
 	Save cds.lib file and select the correct option for cds.lib file format based on the HDL Language and Libraries used. 
 	Select “Don’t include any libraries (verilog design)” from “New cds.lib file” and click on “OK” as in below figure .
@@ -74,12 +74,14 @@ Fig 5:cds.lib file Creation
 
 ![image](https://github.com/user-attachments/assets/781b297a-11e9-4140-89c5-ee3b0d15bbd4)
 
-Fig 6: Selection of Don’t include any libraries
+Fig 5: Selection of Don’t include any libraries
 
 	A ‘NCLaunch window’ appears as shown in figure below 
 	Left side you can see the HDL files. Right side of the window has worklib and snapshots directories listed. 
 	Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation .
 	To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation. 
+
+Fig 6: Nclaunch Window
 
 ## Step 1: Compilation:– Process to check the correct Verilog language syntax and usage 
 	Inputs: Supplied are Verilog design and test bench codes 
