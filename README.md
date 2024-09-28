@@ -12,6 +12,7 @@ Functional Simulation: nclaunch Simulator (nclaunch)
 
 ## 4-bit Adder Design:
 To construct a 4-bit adder, need to chain together four 1-bit full adders. Each full adder computes the sum and carry for one bit of the two numbers. The carry-out from one adder feeds into the carry-in of the next adder in the sequence. This process adds the two 4-bit numbers bit by bit, with the carry propagating through each stage, resulting in a final sum and carry-out at the end.
+
 To design a 1-bit full adder, the first step is to create a truth table that represents all possible combinations of the inputs (A, B, and CIN) and the corresponding outputs (Sum(S) and COUT).
 
 ![image](https://github.com/user-attachments/assets/716a26b6-a449-42e0-9e2d-cdbaa4b291b9)
@@ -23,11 +24,15 @@ Here’s the truth table for a 1-bit full adder:
 Fig 1 : Diagram and truth table of full adder
 
 ### Logic Expressions:
+
 1.	Sum (S):
+   
 S=A⊕B⊕CIN
 
 Where ⊕ represents XOR.
+
 3.	Carry out (COUT):
+   
 COUT=(A&B) | (CIN&(A^B))
 
 ![image](https://github.com/user-attachments/assets/7d6fa554-2614-4f19-aa68-65c9e6153caa)
@@ -36,11 +41,13 @@ Fig:2 Diagram of 4 Bit Adder
 
 ## Creating Source Codes 
 	In the Terminal, type gedit <filename>.v (ex: gedit 4bitadder.v). 
+
 	A Blank Document opens up into which the following source code can be typed down. 
 
 Note : File name should be with HDL Extension
 
-###a) Verify the Functionality 
+### a) Verify the Functionality 
+
 	Three Codes shall be written for implementation of 4-bit Adder as follows, 
 
 •	fa.v → Single Bit 3-Input Full Adder [Sub-Module / Function] 
@@ -50,6 +57,7 @@ Note : File name should be with HDL Extension
 •	fa_4bit_test.v → Test bench 
 
 ## Functional Simulation: 
+
 	Invoke the cadence environment by type the below commands 
 
 	tcsh (Invokes C-Shell) 
@@ -143,6 +151,7 @@ Fig 7: Compiled database in worklib
 Fig 8: Elaboration Launch Option
 
 ## Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
+
 	Inputs: Compiled and Elaborated top level module name 
 
 	Outputs: Simulation log file, waveforms for debugging 
