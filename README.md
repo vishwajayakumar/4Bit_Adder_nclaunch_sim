@@ -86,8 +86,11 @@ Fig 6: Nclaunch Window
 
 ## Step 1: Compilation:– Process to check the correct Verilog language syntax and usage 
 	Inputs: Supplied are Verilog design and test bench codes 
+
 	Outputs: Compiled database created in mapped library if successful, generates report else error reported in log file 
+
 	Steps for compilation: 
+
 1. Create work/library directory (most of the latest simulation tools creates automatically) 
 2. Map the work to library created (most of the latest simulation tools creates automatically) 
 3. Run the compile command with compile options 
@@ -104,8 +107,11 @@ Fig 7: Compiled database in worklib
 
 ## Step 2: Elaboration:– To check the port connections in hierarchical design 
 	Inputs: Top level design / test bench Verilog codes 
+
 	Outputs: Elaborate database updated in mapped library if successful, generates report else error reported in log file 
+
 	Steps for elaboration – Run the elaboration command with elaborate options 
+
 1.	It builds the module hierarchy 
 2.	Binds modules to module instances 
 3.	Computes parameter values 
@@ -117,8 +123,11 @@ Fig 8: Elaboration Launch Option
 
 ## Step 3: Simulation: – Simulate with the given test vectors over a period of time to observe the output behaviour. 
 	Inputs: Compiled and Elaborated top level module name 
+
 	Outputs: Simulation log file, waveforms for debugging 
+
 	Simulation allow to dump design and test bench signals into a waveform 
+
 	Steps for simulation – Run the simulation command with simulator options
 
 Fig 9: Design Browser window for simulation
