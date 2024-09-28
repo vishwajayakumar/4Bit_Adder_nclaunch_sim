@@ -36,8 +36,11 @@ Note : File name should be with HDL Extension
 
 a) Verify the Functionality 
 	Three Codes shall be written for implementation of 4-bit Adder as follows, 
+
 •	fa.v → Single Bit 3-Input Full Adder [Sub-Module / Function] 
+
 •	fa_4bit.v → Top Module for Adding 4-bit Inputs. 
+
 •	fa_4bit_test.v → Test bench 
 
 # Functional Simulation: 
@@ -113,7 +116,9 @@ Fig 8: Elaboration Launch Option
 	Steps for simulation – Run the simulation command with simulator options
 
 Fig 9: Design Browser window for simulation
+
 Fig 10: Launching Simulation Waveform WindowSimulation Waveform Window
+
 Fig 11: Simulation Waveform Window
 
 
