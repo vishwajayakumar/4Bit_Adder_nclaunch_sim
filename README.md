@@ -57,6 +57,9 @@ Note : File name should be with HDL Extension
 
 •	fa_4bit_test.v → Test bench 
 
+*/Program to design 4 bit adder by instantiating 1 bit Full adder.also add test bench program */
+Developed by: Register Number*/
+
 ## Functional Simulation: 
 
 	Invoke the cadence environment by type the below commands 
