@@ -47,6 +47,28 @@ COUT=(A&B) | (CIN&(A^B))
 
 Note : File name should be with HDL Extension
 
+## Verilog code for 1 Bit Full adder
+~~~
+module full_adder(A,B,CIN,S,COUT);
+input A,B,CIN;
+output S,COUT;
+assign S=A^B^CIN;
+assign COUT=(A&B) | (CIN&(A^B));
+endmodule
+~~~
+
+## Verilog code for 4 bit full adder:
+~~~
+module fulladd_4bit(A,B,C0,S,C4);
+input C0,[3:0] A,B;
+output C4,[3:0] S;
+wire C1,C2,C3;
+full_adder fa0 (A[0],B[0],C0,S[0],C1);
+full_adder fa1 (A[1],B[1],C1,S[1],C2);
+full_adder fa2 (A[2],B[2],C2,S[2],C3);
+full_adder fa3 (A[3],B[3],C3,S[3],C4);
+endmodule
+~~~
 ### a) Verify the Functionality 
 
 	Three Codes shall be written for implementation of 4-bit Adder as follows, 
@@ -57,9 +79,18 @@ Note : File name should be with HDL Extension
 
 •	fa_4bit_test.v → Test bench 
 
-*/Program to design 4 bit adder by instantiating 1 bit Full adder.also add test bench program */
-Developed by: Register Number*/
-
+## Test bench code for 4bit full adder:
+~~~
+module fulladd_4bit(A,B,C0,S,C4);
+input C0,[3:0] A,B;
+output C4,[3:0] S;
+wire C1,C2,C3;
+full_adder fa0 (A[0],B[0],C0,S[0],C1);
+full_adder fa1 (A[1],B[1],C1,S[1],C2);
+full_adder fa2 (A[2],B[2],C2,S[2],C3);
+full_adder fa3 (A[3],B[3],C3,S[3],C4);
+endmodule
+~~~
 ## Functional Simulation: 
 
 	Invoke the cadence environment by type the below commands 
